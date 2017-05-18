@@ -54,7 +54,11 @@ kubectl set image deployment/nginx-deployment nginx=nginx:1.9.1
 kubectl rollout undo deployment/nginx-deployment
 ```
 
+<<<<<<< HEAD
 ## Deployment详细解析
+=======
+## Deployment概念详细解析
+>>>>>>> usp/master
 
 本文翻译自kubernetes官方文档：https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/concepts/workloads/controllers/deployment.md
 
@@ -83,13 +87,21 @@ Deployment为Pod和Replica Set（下一代Replication Controller）提供声明�
 下载示例文件并执行命令：
 
 ```shell
+<<<<<<< HEAD
 $ kubectl create -f https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/nginx-deployment.yaml --record
+=======
+$ kubectl create -f docs/user-guide/nginx-deployment.yaml --record
+>>>>>>> usp/master
 deployment "nginx-deployment" created
 ```
 
 将kubectl的 `—record` 的flag设置为 `true`可以在annotation中记录当前命令创建或者升级了该资源。这在未来会很有用，例如，查看在每个Deployment revision中执行了哪些命令。
 
+<<<<<<< HEAD
 然后立即执行`get`将获得如下结果：
+=======
+然后立即执行`get`í将获得如下结果：
+>>>>>>> usp/master
 
 ```shell
 $ kubectl get deployments

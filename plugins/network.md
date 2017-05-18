@@ -56,7 +56,11 @@ cat >/etc/cni/net.d/99-loopback.conf <<-EOF
 EOF
 ```
 
+<<<<<<< HEAD
 CNI网络插件的详细介绍见[sdn-handbook](https://feisky.gitbooks.io/sdn/container/cni/)。
+=======
+更多CNI网络插件的说明请参考[sdn-handbook CNI 网络插件](https://feisky.gitbooks.io/sdn/container/cni/)。
+>>>>>>> usp/master
 
 ## calico
 
@@ -89,7 +93,11 @@ kubectl apply -f https://gist.githubusercontent.com/feiskyer/0b00688584cc7ed9bd9
 - [ovn-kubernetes](https://github.com/openvswitch/ovn-kubernetes)
 - [kuryr-kubernetes](https://github.com/openstack/kuryr-kubernetes)
 
+<<<<<<< HEAD
 这些网络插件的详细文档见[sdn-handbook](https://feisky.gitbooks.io/sdn/container/kubernetes.html)以及[CNI网络插件](https://feisky.gitbooks.io/sdn/container/cni/)。
+=======
+更多Kubernetes网络插件的说明可以参见[sdn-handbook Kubernetes网络插件](https://feisky.gitbooks.io/sdn/container/kubernetes.html)。
+>>>>>>> usp/master
 
 ## 其他辅助工具
 
