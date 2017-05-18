@@ -83,13 +83,13 @@ Deployment为Pod和Replica Set（下一代Replication Controller）提供声明�
 下载示例文件并执行命令：
 
 ```shell
-$ kubectl create -f docs/user-guide/nginx-deployment.yaml --record
+$ kubectl create -f https://github.com/kubernetes/kubernetes.github.io/blob/master/docs/user-guide/nginx-deployment.yaml --record
 deployment "nginx-deployment" created
 ```
 
 将kubectl的 `—record` 的flag设置为 `true`可以在annotation中记录当前命令创建或者升级了该资源。这在未来会很有用，例如，查看在每个Deployment revision中执行了哪些命令。
 
-然后立即执行`get`í将获得如下结果：
+然后立即执行`get`将获得如下结果：
 
 ```shell
 $ kubectl get deployments
